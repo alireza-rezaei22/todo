@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(147, 255, 219);
+}
+
+input {
+    border: none;
+    border-radius: 10px;
+}
+
+input:hover {
+    box-shadow: 0 5px 10px rgb(172, 216, 201);
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    height: 500px;
+}
+
+#input-todo {
+    background-color: rgb(195, 255, 235);
+    width: 280px;
+    height: 30px;
+    padding: 0 8px;
+}
+
+.main-btn {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px;
+    background-color: rgb(147, 255, 219);
+}
+
+.main-btn input {
+    width: 45%;
+    height: 30px;
+}
+
+.main-btn #add-btn {
+    background-color: rgb(103, 252, 103);
+}
+
+.main-btn #remove-all-btn {
+    background-color: rgb(255, 97, 97);
+}
+
+ul {
+    all: unset;
+}
+
+li {
+    background-color: rgb(195, 255, 235);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+li .status {
+    background-color: rgb(103, 252, 103);
+}
+li label{
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+li .done {
+    text-decoration: line-through;
+    color: gray;
+    
+    
+}
+
+li .remove {
+    background-color: rgb(255, 97, 97);
+}
+
+@media(min-width:425px) {
+    #input-todo {
+        width: 350px;
+    }
+    li label{
+        width: 200px;
+    }
+}
+
+@media(min-width:768px) {
+    #input-todo {
+        width: 500px;
+    }
+    li label{
+        width: 370px;
+    }
+}
